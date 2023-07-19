@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  background: #f9f4fb;
+}
+
+#astro {
+  width: 100%;
+  height: auto;
+}
+
+.intro-desktop {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #b52184;
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-top: 1.7rem;
+}
+
+.text p {
+  color: #312d64;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.view-more {
+  margin: 3.5rem 0 9.3rem;
+  border: 3px solid #b52184;
+  border-radius: 3rem;
+  padding: 2rem 1rem;
+  background: #f9f4fb;
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+#second-desktop {
+  background: linear-gradient(to right, #343193, #302c63);
+  display: flex;
+  justify-content: center;
+  padding: 0 3.9rem 0 3.9rem;
+}
+
+.card {
+  background: #fff;
+  margin-bottom: 3.1rem;
+  border-radius: 1.2rem;
+  padding: 2.6rem 3.7rem 2.6rem 2.6rem;
+}
+
+.cards:first-child {
+  margin-top: 5.1rem;
+}
+
+.card:last-child {
+  margin-bottom: 5.5rem;
+}
+
+.card img {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2rem;
+}
+
+h2 span {
+  color: #b52184;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.card p {
+  color: #312d64;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+#infos {
+  padding: 7.8rem 4rem 6.5rem;
+}
+
+.fieldset-wrapper {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #b52184;
+}
+
+legend {
+  margin-bottom: 4.3rem;
+}
+
+#name,
+#email {
+  width: 100%;
+  height: auto;
+  padding: 1.2rem 1.6rem 1.2rem 3.8rem;
+  border-radius: 1.6rem;
+  border: 2px solid #312d64;
+  margin-bottom: 2.4rem;
+  background: #f9f4fb;
+}
+
+#add-on {
+  width: 100%;
+  border-radius: 1.6rem;
+  border: 2px solid #312d64;
+  margin-bottom: 2.4rem;
+  padding: 1.2rem 1.6rem 1.2rem 1.6rem;
+  background: #f9f4fb;
+}
+
+.send-message {
+  width: 15.1rem;
+  height: 4.5rem;
+  border-radius: 1.6rem;
+  background: linear-gradient(to right, #343193, #302c63);
+  border: none;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper img {
+  position: absolute;
+  top: 35%;
+  left: 14px;
+  transform: translateY(-50%);
+  height: 20px;
+}
+
+.input-wrapper input[type="text"] {
+  padding-left: 25px;
+}
+
+input::placeholder {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.6rem;
+  color: #312d64;
+  font-weight: 600;
+  padding-left: 0.2rem;
+}
+
+textarea::placeholder {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.6rem;
+  color: #312d64;
+  font-weight: 600;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 7.8rem;
+  padding: 1.6rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #343193, #302c63);
+}
+
+footer p {
+  color: #fff;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+#stars {
+  display: none;
+}
+
+@media (min-width: 1440px) {
+  .intro-desktop {
+    margin-bottom: 24rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.8rem;
+  }
+
+  #astro {
+    margin: 0 3rem 0 0;
+    width: 71.9rem;
+    height: 73.2rem;
+  }
+
+  h1 {
+    font-weight: 900;
+    margin-top: 31.2rem;
+    color: #b52184;
+    font-size: 5.8rem;
+  }
+
+  .text p {
+    color: #312d64;
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 17.9rem;
+  }
+
+  .text {
+    margin-left: 19rem;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .view-more {
+    margin: 0;
+    width: 58.587px;
+    height: 105px;
+  }
+
+  .cards {
+    display: flex;
+  }
+
+  #second-desktop {
+    padding: 6.4rem 11.1rem;
+  }
+
+  .card {
+    display: flex;
+    padding: 32px;
+    flex-direction: column;
+    gap: 2rem;
+    width: 36.6rem;
+    height: 44.8rem;
+    margin-right: 60px;
+  }
+
+  .card img {
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 span {
+    font-size: 3.5rem;
+  }
+
+  .card p {
+    color: #312d64;
+    font-size: 1.9rem;
+    font-weight: 600;
+  }
+
+  .cards:first-child {
+    margin-top: 0;
+  }
+
+  .card:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .fieldset-wrapper {
+    font-size: 4.2rem;
+    margin: 9.5rem 9.2rem;
+  }
+
+  #stars {
+    display: inline;
+    margin: 0;
+  }
+
+  #infos {
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  #name,
+  #email {
+    width: 65.6rem;
+  }
+
+  #add-on {
+    width: 65.6rem;
+  }
+
+  .input-wrapper img {
+    top: 43%;
+  }
+}
+
+@media (max-width: 1440px) {
+  #astro {
+    width: 51rem;
+    height: 51rem;
+  }
+}
